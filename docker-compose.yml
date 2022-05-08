@@ -1,0 +1,11 @@
+version: '3'
+services:
+  bcoin-node:
+    build: .
+    ports:
+      - '8333:8333'
+      - '8332:8332'
+      - '18332:18332'
+      - '18556:18556'
+    volumes:
+      - ./.bcoin/:/app/

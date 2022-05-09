@@ -3,9 +3,9 @@ services:
   bcoin-node:
     build: .
     ports:
-      - '8333:8333'
-      - '8332:8332'
-      - '18332:18332'
-      - '18556:18556'
+      - '8332:8332' # main
+      - '18332:18332' # testnet
+      - '18556:18556' # default simnet
+      - '48332:48332' # regtest
     volumes:
-      - ./.bcoin/:/app/
+      - ./.bcoin/:/app/bcoin/.bcoin/:ro

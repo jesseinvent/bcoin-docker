@@ -1,6 +1,7 @@
 version: '3'
 services:
   bcoin-node:
+    container_name: bcoin-spv-node
     build: .
     ports:
       - '8332:8332' # main

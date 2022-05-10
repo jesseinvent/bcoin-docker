@@ -8,4 +8,4 @@ services:
       - '18556:18556' # default simnet
       - '48332:48332' # regtest
     volumes:
-      - ./.bcoin/:/app/bcoin/.bcoin/:ro
+      - ./.bcoin/:~/.bcoin/:ro
